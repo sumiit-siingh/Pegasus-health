@@ -1,108 +1,83 @@
+"use client";
+import React from "react";
 import AnimateOnScroll from "../../components/AnimateOnScroll";
+import { ContactForm } from "../../components/ContactForm";
+import { IconMail, IconPhone, IconMapPin } from "@tabler/icons-react";
+import { AuroraBackground } from "../../components/aurora-background";
 
+// This is a standard JavaScript component, so no TypeScript syntax is used here.
 const ContactPage = () => {
   return (
-    <div className="space-y-16 py-12">
+    <div className="container mx-auto px-4 py-16">
+      <AuroraBackground className="absolute inset-0 z-[-1]" />
+
       {/* Page Header */}
-      <section className="text-center">
-        <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
-          Contact <span className="text-[#00B2FF]">Us</span>
-        </h1>
-        <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-300">
-          Have a question? We're here to help. Reach out to us via phone, email,
-          or the form below.
-        </p>
-      </section>
-
-      {/* Main Content: Info + Form */}
       <AnimateOnScroll>
-        <section className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-start">
-          {/* Left Column: Contact Info */}
-          <div className="bg-gray-900/40 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-12 space-y-8">
-            <div>
-              <h3 className="text-xl font-semibold text-white">
-                Office Address
-              </h3>
-              <p className="mt-1 text-gray-300">
-                [Street Address]
-                <br />
-                [City], Florida [Zip Code]
-              </p>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-white">Email</h3>
-              <a
-                href="mailto:info@pegasushealth.com"
-                className="mt-1 text-gray-300 hover:text-[#00B2FF]"
-              >
-                info@pegasushealth.com
-              </a>
-            </div>
-            <div>
-              <h3 className="text-xl font-semibold text-white">Phone</h3>
-              <p className="mt-1 text-gray-300">[Your Phone Number]</p>
-            </div>
-          </div>
+        <div className=" bg-transparen rounded-2xl p-8 md:p-12 space-y-20">
+          {/* Page Header */}
+          <section className="text-center">
+            <h1 className="text-4xl md:text-5xl font-extrabold ">
+              <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500  text-white pr-2 pl-2">
+                Contact
+              </span>{" "}
+              <span className="text-[#00B2FF]">Us</span>
+            </h1>
+            <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-700">
+              We're here to help you succeed! Reach out to the Pegasus team with
+              any questions or to start your partnership journey.
+            </p>
+          </section>
 
-          {/* Right Column: Inquiry Form */}
-          <div className="bg-white p-8 rounded-lg shadow-lg">
-            <h2 className="text-2xl font-bold text-gray-800 mb-6">
-              Send an Inquiry
-            </h2>
-            <form className="space-y-6">
-              <div>
-                <label
-                  htmlFor="full-name"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  name="full-name"
-                  id="full-name"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#00B2FF] focus:border-[#00B2FF]"
-                />
+          {/* Main Content Area */}
+          <section className="grid grid-cols-1 lg:grid-cols-5 gap-16 items-start">
+            {/* Left Column: Contact Details */}
+            <div className="lg:col-span-2 space-y-8 border border-gray-400 p-6 rounded-lg bg-white/50 backdrop-blur-lg">
+              <div className="flex items-start space-x-4 ">
+                <div className="bg-blue-100 p-3 rounded-full">
+                  <IconMapPin className="h-6 w-6 text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-800">
+                    Office Address
+                  </h3>
+                  <p className="text-gray-600">
+                    [Full Street Address]
+                    <br />
+                    [City], Florida [Zip Code]
+                  </p>
+                </div>
               </div>
-              <div>
-                <label
-                  htmlFor="email"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Email Address
-                </label>
-                <input
-                  type="email"
-                  name="email"
-                  id="email"
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#00B2FF] focus:border-[#00B2FF]"
-                />
+              <div className="flex items-start space-x-4">
+                <div className="bg-blue-100 p-3 rounded-full">
+                  <IconPhone className="h-6 w-6 text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-800">Phone</h3>
+                  <p className="text-gray-600">[Your Phone Number]</p>
+                </div>
               </div>
-              <div>
-                <label
-                  htmlFor="message"
-                  className="block text-sm font-medium text-gray-700"
-                >
-                  Message
-                </label>
-                <textarea
-                  name="message"
-                  id="message"
-                  rows={4}
-                  className="mt-1 block w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-[#00B2FF] focus:border-[#00B2FF]"
-                ></textarea>
+              <div className="flex items-start space-x-4">
+                <div className="bg-blue-100 p-3 rounded-full">
+                  <IconMail className="h-6 w-6 text-blue-600" />
+                </div>
+                <div>
+                  <h3 className="text-lg font-semibold text-gray-800">Email</h3>
+                  <a
+                    href="mailto:info@pegasushealth.com"
+                    className="text-gray-600 hover:text-blue-600"
+                  >
+                    [Your Email Address]
+                  </a>
+                </div>
               </div>
-              <div>
-                <button
-                  type="submit"
-                  className="w-full bg-[#00B2FF] text-white font-bold py-3 px-4 rounded-md hover:bg-cyan-400 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-[#00B2FF] transition-colors duration-300"
-                >
-                  Send Message
-                </button>
-              </div>
-            </form>
-          </div>
-        </section>
+            </div>
+
+            {/* Right Column: Contact Form */}
+            <div className="lg:col-span-3">
+              <ContactForm />
+            </div>
+          </section>
+        </div>
       </AnimateOnScroll>
     </div>
   );

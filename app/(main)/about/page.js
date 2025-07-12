@@ -69,7 +69,7 @@ const AboutPage = () => {
 
             <section className="text-center">
               <h2 className="text-5xl font-extrabold  ">
-                <span className="bg-gradient-to-r from-orange-500 to-pink-500 text-white">
+                <span className="bg-gradient-to-r from-orange-500 to-pink-500 text-white md:pl-4">
                   Leader
                 </span>
                 <span className="text-[#00B2FF] bg-white">ship</span>

@@ -99,7 +99,7 @@ const Navbar = () => {
             <div className="hidden md:block">
               <Link
                 href="/contact"
-                className="bg-[#00B2FF] text-white lg:font-bold lg:px-5 px-2 lg:py-2 py-1 rounded-md hover:bg-cyan-400 transition-colors duration-300 shadow-lg"
+                className="bg-[#00B2FF] text-white lg:font-bold lg:px-5 px-2 lg:py-2 py-1 rounded-md hover:bg-gradient-to-r from-orange-500 to-pink-500 transition-colors duration-300 shadow-lg"
               >
                 Contact Us
               </Link>
@@ -155,15 +155,15 @@ const Navbar = () => {
               animate="visible"
               exit="hidden"
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              className="fixed top-0 right-0 w-3/4 max-w-sm h-full bg-white z-[1000] md:hidden flex flex-col p-8 pt-24"
+              className="fixed top-35 right-0 w-50 max-w-sm h-130 bg-white z-[1000] md:hidden flex flex-col p-8 pt-24"
             >
               <div className="flex-grow flex flex-col items-center justify-center text-center space-y-8">
                 {[
-                  { label: "Home", path: "/" },
-                  { label: "About", path: "/about" },
-                  { label: "Plans", path: "/plans" },
-                  { label: "Broker Advantage", path: "/broker-advantage" },
-                  { label: "Partner With Us", path: "/partner-with-us" },
+                  { label: "🏠", path: "/" },
+                  { label: "🦄", path: "/about" },
+                  { label: "📕", path: "/plans" },
+                  { label: "💹", path: "/broker-advantage" },
+                  { label: "🤝", path: "/partner-with-us" },
                 ].map((item, i) => (
                   <button
                     key={i}
@@ -176,7 +176,7 @@ const Navbar = () => {
 
                 <button
                   onClick={() => handleNavigate("/contact")}
-                  className="mt-4 bg-[#00B2FF] text-white font-bold px-8 py-3 rounded-md text-xl"
+                  className="mt-4 bg-[#00B2FF] text-white font-bold px-8 py-3 rounded-md text-lg"
                 >
                   Contact Us
                 </button>
