@@ -20,28 +20,28 @@ export function HeroSidebar() {
       label: "Home",
       href: "/",
       icon: (
-        <IconHome className="h-5 w-5 shrink-0 text-neutral-700 dark:text-neutral-200" />
+        <IconHome className="h-7 w-7 shrink-0 text-neutral-700 dark:text-neutral-200" />
       ),
     },
     {
       label: "About Pegasus",
       href: "/about",
       icon: (
-        <IconUsers className="h-5 w-5 shrink-0 text-neutral-700 dark:text-neutral-200" />
+        <IconUsers className="h-7 w-7 shrink-0 text-neutral-700 dark:text-neutral-200" />
       ),
     },
     {
       label: "Plans",
       href: "/plans",
       icon: (
-        <IconReportMoney className="h-5 w-5 shrink-0 text-neutral-700 dark:text-neutral-200" />
+        <IconReportMoney className="h-7 w-7 shrink-0 text-neutral-700 dark:text-neutral-200" />
       ),
     },
     {
       label: "Broker Advantage",
       href: "/broker-advantage",
       icon: (
-        <IconChartInfographic className="h-5 w-5 shrink-0 text-neutral-700 dark:text-neutral-200" />
+        <IconChartInfographic className="h-7 w-7 shrink-0 text-neutral-700 dark:text-neutral-200" />
       ),
     },
 
@@ -49,7 +49,7 @@ export function HeroSidebar() {
       label: "Partner with us",
       href: "/partner-with-us",
       icon: (
-        <FaRegHandshake className="h-5 w-5 shrink-0 text-neutral-700 dark:text-neutral-200" />
+        <FaRegHandshake className="h-7 w-7 shrink-0 text-neutral-700 dark:text-neutral-200" />
       ),
     },
   ];
@@ -59,7 +59,7 @@ export function HeroSidebar() {
       <SidebarBody className="justify-between gap-10">
         <div className="flex flex-1 flex-col overflow-x-hidden overflow-y-auto">
           {open ? <Logo /> : <LogoIcon />}
-          <div className="mt-8 flex flex-col gap-2">
+          <div className="mt-8 flex flex-col  gap-10">
             {links.map((link, idx) => (
               <SidebarLink key={idx} link={link} />
             ))}
@@ -71,7 +71,7 @@ export function HeroSidebar() {
               label: "Contact Us",
               href: "/contact",
               icon: (
-                <IconMessage className="h-5 w-5 shrink-0 text-neutral-700 dark:text-neutral-200" />
+                <IconMessage className="h-7 w-7 shrink-0 text-neutral-700 dark:text-neutral-200" />
               ),
             }}
           />

@@ -46,9 +46,9 @@ const PartnerPage = () => {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-16">
+    <div className="bg-gradient-to-r from-blue-300 via-white to-blue-300 mx-auto px-4 py-16 flex items-center justify-center">
       <AnimateOnScroll>
-        <div className="bg-white/60 backdrop-blur-lg border border-white/50 rounded-2xl p-8 md:p-12 space-y-20">
+        <div className="container backdrop-blur-lg rounded-2xl p-8 md:p-12 space-y-20">
           {/* Page Header */}
           <section className="text-center space-y-5 ">
             <h1 className="text-4xl md:text-5xl md:h-20 font-extrabold text-[#323202]  ">
@@ -68,14 +68,14 @@ const PartnerPage = () => {
           </section>
 
           {/* Lead Capture Form & Onboarding Steps */}
-          <section className="grid grid-cols-1 lg:grid-cols-5 gap-16 items-start">
+          <section className="flex flex-col lg:flex-row flex-wrap gap-6">
             {/* Form Component is now placed directly */}
-            <div className="lg:col-span-3">
+            <div className="lg:col-span-3 flex-1 min-w-[300px]">
               <PartnershipForm />
             </div>
 
             {/* Onboarding Steps */}
-            <div className="lg:col-span-2 space-y-4 border border-gray-400 md:p-10 p-4 rounded-lg bg-white/50 backdrop-blur-lg">
+            <div className="lg:col-span-2 flex-1 min-w-[300px] space-y-4 border border-gray-300 md:p-10 p-4 rounded-lg bg-white/50 backdrop-blur-lg">
               <h2 className="text-xl md:text-2xl md:font-extrabold font-bold text-neutral-800 mb-4">
                 Seamless Onboarding Process
               </h2>

@@ -45,7 +45,7 @@ export function PartnershipForm() {
   };
 
   return (
-    <div className="shadow-input mx-auto w-full max-w-lg rounded-2xl border border-gray-400 bg-white p-4 md:p-8 dark:bg-black">
+    <div className="shadow-input mx-auto w-full max-w-lg rounded-2xl border border-gray-300 bg-white p-4 md:p-8 dark:bg-black">
       <h2 className="text-xl md:text-2xl md:font-extrabold font-bold text-neutral-800 dark:text-neutral-200">
         Become a Pegasus Partner
       </h2>
@@ -65,6 +65,7 @@ export function PartnershipForm() {
               required
               value={formData.fullName}
               onChange={handleChange}
+              className="bg-gray-300"
             />
           </LabelInputContainer>
           <LabelInputContainer>
@@ -76,6 +77,7 @@ export function PartnershipForm() {
               required
               value={formData.email}
               onChange={handleChange}
+              className="bg-gray-300"
             />
           </LabelInputContainer>
           <LabelInputContainer>
@@ -87,6 +89,7 @@ export function PartnershipForm() {
               required
               value={formData.phone}
               onChange={handleChange}
+              className="bg-gray-300"
             />
           </LabelInputContainer>
           <LabelInputContainer>
@@ -97,6 +100,7 @@ export function PartnershipForm() {
               type="text"
               value={formData.companyName}
               onChange={handleChange}
+              className="bg-gray-300"
             />
           </LabelInputContainer>
           <LabelInputContainer className="md:col-span-2">
@@ -108,6 +112,7 @@ export function PartnershipForm() {
               required
               value={formData.states}
               onChange={handleChange}
+              className="bg-gray-300"
             />
           </LabelInputContainer>
           <LabelInputContainer>
@@ -117,6 +122,7 @@ export function PartnershipForm() {
               required
               value={formData.experience}
               onChange={handleChange}
+              className="bg-gray-300"
             >
               <option value="" disabled>
                 Select experience...
@@ -134,6 +140,7 @@ export function PartnershipForm() {
               required
               value={formData.howDidYouHear}
               onChange={handleChange}
+              className="bg-gray-300"
             >
               <option value="" disabled>
                 Select an option...
@@ -156,6 +163,7 @@ export function PartnershipForm() {
             value={formData.message}
             onChange={handleChange}
             rows={4}
+            className="bg-gray-300"
           />
         </LabelInputContainer>
 

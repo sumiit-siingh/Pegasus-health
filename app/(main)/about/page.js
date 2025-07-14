@@ -4,7 +4,7 @@ import { BackgroundGradient } from "../../components/BackgroundGradient";
 
 const AboutPage = () => {
   return (
-    <div className="relative isolate">
+    <div className="relative isolate bg-gradient-to-r from-blue-300 via-white to-blue-300 ">
       {/* Background Image Container */}
 
       {/* The existing page content */}

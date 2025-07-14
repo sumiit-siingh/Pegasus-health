@@ -53,7 +53,7 @@ export function ContactForm() {
 
   return (
     <div className="shadow-input border border-gray-400 mx-auto w-full max-w-lg rounded-2xl bg-white p-4 md:p-8 dark:bg-black">
-      <h2 className="text-xl font-bold text-neutral-800 dark:text-neutral-200">
+      <h2 className="text-xl font-bold text-[#323202] dark:text-neutral-200">
         Send an Inquiry
       </h2>
 
@@ -68,6 +68,7 @@ export function ContactForm() {
               required
               value={formData.fullName}
               onChange={handleChange}
+              className="bg-gray-300"
             />
           </LabelInputContainer>
           <LabelInputContainer>
@@ -79,6 +80,7 @@ export function ContactForm() {
               required
               value={formData.email}
               onChange={handleChange}
+              className="bg-gray-300"
             />
           </LabelInputContainer>
         </div>
@@ -92,6 +94,7 @@ export function ContactForm() {
               type="tel"
               value={formData.phone}
               onChange={handleChange}
+              className="bg-gray-300"
             />
           </LabelInputContainer>
           <LabelInputContainer>
@@ -101,8 +104,9 @@ export function ContactForm() {
               required
               value={formData.subject}
               onChange={handleChange}
+              className="bg-gray-300"
             >
-              <option value="" disabled>
+              <option value="" disabled className="bg-gray-300 text-black">
                 Select a subject...
               </option>
               <option value="General Inquiry">General Inquiry</option>
@@ -122,11 +126,12 @@ export function ContactForm() {
             value={formData.message}
             onChange={handleChange}
             rows={4}
+            className="bg-gray-300"
           />
         </LabelInputContainer>
 
         <button
-          className="group/btn relative block h-10 w-full rounded-md bg-gradient-to-br from-black to-neutral-600 font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:bg-zinc-800 dark:from-zinc-900 dark:to-zinc-900 dark:shadow-[0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
+          className="group/btn relative block cursor-pointer h-10 w-full rounded-md bg-gradient-to-br from-black to-neutral-600 font-medium text-white shadow-[0px_1px_0px_0px_#ffffff40_inset,0px_-1px_0px_0px_#ffffff40_inset] dark:bg-zinc-800 dark:from-zinc-900 dark:to-zinc-900 dark:shadow-[0px_1px_0px_0px_#27272a_inset,0px_-1px_0px_0px_#27272a_inset]"
           type="submit"
         >
           Send Message &rarr;

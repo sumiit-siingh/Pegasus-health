@@ -19,13 +19,17 @@ const DownloadIcon = () => (
 
 const DigitalResourcesPage = () => {
   return (
-    <div className="space-y-16 py-12">
+    <div className="space-y-16 py-12 bg-gradient-to-r from-blue-300 via-white to-blue-300">
       {/* Page Header */}
       <section className="text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
-          Digital <span className="text-[#00B2FF]">Resources</span>
+          <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 pl-2 pr-2 ">
+            {" "}
+            Digital
+          </span>{" "}
+          <span className="text-[#00B2FF]">Resources</span>
         </h1>
-        <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-300">
+        <p className="mt-4 max-w-2xl mx-auto text-lg text-[#323202]">
           Your one-stop shop for all necessary forms, brochures, and onboarding
           materials.
         </p>
@@ -34,13 +38,13 @@ const DigitalResourcesPage = () => {
       {/* Resources Grid */}
       <AnimateOnScroll>
         <section className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2  gap-8">
             {/* Resource Card 1 */}
-            <div className="bg-slate-800/50 backdrop-blur-sm border border-white/10 p-6 rounded-2xl flex flex-col">
-              <h2 className="text-xl font-bold text-white">
+            <div className=" backdrop-blur-sm bg-white/20 hover:transform hover:scale-105 ease-in-out duration-400  border border-white/10 p-6 rounded-2xl flex flex-col">
+              <h2 className="text-xl font-bold text-[#00b2ff]">
                 Broker Onboarding Kit
               </h2>
-              <p className="mt-2 text-gray-300 flex-grow">
+              <p className="mt-2 text-[#323202] flex-grow">
                 Everything you need to get started, including contracts and
                 welcome information.
               </p>
@@ -54,11 +58,11 @@ const DigitalResourcesPage = () => {
             </div>
 
             {/* Resource Card 2 */}
-            <div className="bg-slate-800/50 backdrop-blur-sm border border-white/10 p-6 rounded-2xl flex flex-col">
-              <h2 className="text-xl font-bold text-white">
+            <div className=" backdrop-blur-sm bg-white/20 hover:transform hover:scale-105 ease-in-out duration-400 border border-white/10 p-6 rounded-2xl flex flex-col">
+              <h2 className="text-xl font-bold text-[#00b2ff]">
                 PPO Plan Highlights PDF
               </h2>
-              <p className="mt-2 text-gray-300 flex-grow">
+              <p className="mt-2 text-[#323202] flex-grow">
                 A comprehensive, client-facing document detailing the key
                 advantages of our plans.
               </p>
@@ -72,9 +76,11 @@ const DigitalResourcesPage = () => {
             </div>
 
             {/* Resource Card 3 */}
-            <div className="bg-slate-800/50 backdrop-blur-sm border border-white/10 p-6 rounded-2xl flex flex-col">
-              <h2 className="text-xl font-bold text-white">Enrollment Form</h2>
-              <p className="mt-2 text-gray-300 flex-grow">
+            <div className=" backdrop-blur-sm border bg-white/20 hover:transform hover:scale-105 ease-in-out duration-400 border-white/10 p-6 rounded-2xl flex flex-col">
+              <h2 className="text-xl font-bold text-[#00b2ff]">
+                Enrollment Form
+              </h2>
+              <p className="mt-2 text-[#323202] flex-grow">
                 The official form for enrolling new clients into Pegasus Health
                 Group plans.
               </p>
@@ -88,11 +94,11 @@ const DigitalResourcesPage = () => {
             </div>
 
             {/* Resource Card 4 */}
-            <div className="bg-slate-800/50 backdrop-blur-sm border border-white/10 p-6 rounded-2xl flex flex-col">
-              <h2 className="text-xl font-bold text-white">
+            <div className="50 backdrop-blur-sm bg-white/20 hover:transform hover:scale-105 ease-in-out duration-400 border border-white/10 p-6 rounded-2xl flex flex-col">
+              <h2 className="text-xl font-bold text-[#00b2ff]">
                 Marketing Brochure
               </h2>
-              <p className="mt-2 text-gray-300 flex-grow">
+              <p className="mt-2 text-[#323202] flex-grow">
                 Professionally designed marketing materials to help you attract
                 and inform clients.
               </p>

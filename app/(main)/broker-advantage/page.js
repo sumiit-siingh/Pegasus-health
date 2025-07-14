@@ -85,7 +85,7 @@ const BrokerAdvantagePage = () => {
   ];
 
   return (
-    <div className="space-y-16 py-12">
+    <div className="space-y-16 py-12 bg-gradient-to-r from-blue-300 via-white to-blue-300">
       {/* Page Header */}
       <section className="text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-[#323202]">
@@ -96,9 +96,10 @@ const BrokerAdvantagePage = () => {
           Should Work with <span className="text-[#00B2FF]">Pegasus</span>
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
-          Choosing Pegasus as your Super Broker means unlocking a new level of
-          efficiency, support, and earning potential. We are uniquely positioned
-          to help independent brokers thrive in the competitive ACA market.
+          Choosing <span className="text-[#00B2FF] font-bold">Pegasus</span> as
+          your Super Broker means unlocking a new level of efficiency, support,
+          and earning potential. We are uniquely positioned to help independent
+          brokers thrive in the competitive ACA market.
         </p>
       </section>
 
@@ -227,7 +228,7 @@ const BrokerAdvantagePage = () => {
             </motion.div>
           ))}
         </ul>
-        <div className="bg-white/60 backdrop-blur-lg border border-white/50 rounded-2xl p-8 md:p-12 space-y-20">
+        <div className=" p-8 md:p-12 space-y-20">
           {/* Support Structure Section */}
           <section>
             <h2 className="md:text-5xl text-3xl mt-10 font-bold text-center  text-[#323202]">
@@ -237,7 +238,7 @@ const BrokerAdvantagePage = () => {
               , Tools & Referral Fees
             </h2>
             <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8  ">
-              <div className="bg-white/50 p-6 rounded-lg border border-gray-400 hover:border-orange-30 shadow-md hover:shadow-xl transition-shadow hover:shadow-pink-300 duration-700">
+              <div className="bg-white/50 p-6 rounded-lg border border-gray-400 hover:border-orange-300 shadow-md hover:shadow-xl transition-shadow hover:shadow-pink-300 duration-700">
                 <IconHeadset className="h-8 w-8 text-[#00B2FF] mb-3" />
                 <h3 className="text-xl font-semibold text-gray-900">
                   Personalized Account Management
@@ -297,7 +298,7 @@ const BrokerAdvantagePage = () => {
             <div className="mt-12 flow-root">
               <div className="-mx-4 -my-2 overflow-x-auto sm:-mx-6 lg:-mx-8">
                 <div className="inline-block min-w-full py-2 align-middle sm:px-6 lg:px-8">
-                  <div className="overflow-hidden shadow ring-1 ring-black ring-opacity-5 sm:rounded-lg">
+                  <div className="overflow-hidden shadow ring ring-gray-300 ring-opacity-5 sm:rounded-lg">
                     <table className="min-w-full divide-y divide-gray-300">
                       <thead className="bg-gray-50">
                         <tr>

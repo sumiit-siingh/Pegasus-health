@@ -166,10 +166,10 @@ export default function Home() {
             </p>
             <div className="mt-16  ">
               {/* Card 1 */}
-              <div className="relative flex bg-black/30  flex-col items-center p-8 z-50 backdrop-blur-2xl rounded-2xl border border-gray-200 overflow-hidden">
-                <div className="absolute inset-0 z-[60]">
+              <div className="relative flex bg-gradient-to-r from-blue-200 via-white to-blue-200  flex-col items-center p-8 z-50 backdrop-blur-2xl rounded-2xl border border-gray-200 overflow-hidden ">
+                {/* <div className="absolute inset-0 z-[60]">
                   <WavyBackground />
-                </div>
+                </div> */}
 
                 {/* Make sure this is on top */}
                 <div className="relative z-[70]">

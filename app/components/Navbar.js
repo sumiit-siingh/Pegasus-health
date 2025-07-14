@@ -57,7 +57,7 @@ const Navbar = () => {
         variants={navbarVariants}
         animate={isVisible ? "visible" : "hidden"}
         transition={{ duration: 1, ease: "easeInOut" }}
-        className="bg-white/80 border-b border-gray-200/50 backdrop-blur-lg sticky top-0 z-[100]"
+        className="bg-gradient-to-r from-blue-300 via-white to-blue-300 sticky top-0 z-[100]"
       >
         <div className="container mx-auto px-4">
           <div className="flex justify-between items-center py-3">
@@ -71,7 +71,7 @@ const Navbar = () => {
               />
             </Link>
 
-            <div className="hidden md:flex items-center lg:space-x-25 space-x-2 text-gray-800 lg:font-medium lg:text-lg text-sm">
+            <div className="hidden md:flex items-center lg:space-x-10 xl:space-x-20 space-x-2 text-gray-800 lg:font-medium lg:text-lg text-sm">
               {[
                 "Home",
                 "About",
@@ -155,30 +155,44 @@ const Navbar = () => {
               animate="visible"
               exit="hidden"
               transition={{ type: "spring", stiffness: 300, damping: 30 }}
-              className="fixed top-35 right-0 w-50 max-w-sm h-130 bg-white z-[1000] md:hidden flex flex-col p-8 pt-24"
+              className="fixed top-35 right-0 w-30 max-w-sm h-160 bg-gradient-to-b from-blue-200 via-white to-blue-200 z-[1000] md:hidden flex flex-col p-7 rounded-tl-4xl rounded-bl-4xl"
             >
-              <div className="flex-grow flex flex-col items-center justify-center text-center space-y-8">
+              <div className="flex-grow flex flex-col items-center justify-center text-center space-y-8 ">
                 {[
-                  { label: "🏠", path: "/" },
-                  { label: "🦄", path: "/about" },
-                  { label: "📕", path: "/plans" },
-                  { label: "💹", path: "/broker-advantage" },
-                  { label: "🤝", path: "/partner-with-us" },
+                  { label: "🏠", title: "Home", path: "/" },
+                  { label: "🦄", title: "About", path: "/about" },
+                  { label: "📕", title: "Plans", path: "/plans" },
+                  {
+                    label: "💹",
+                    title: "Broker Advantage",
+                    path: "/broker-advantage",
+                  },
+                  {
+                    label: "🤝",
+                    title: "Partner with us",
+                    path: "/partner-with-us",
+                  },
                 ].map((item, i) => (
                   <button
                     key={i}
                     onClick={() => handleNavigate(item.path)}
-                    className="text-2xl font-bold text-gray-800 hover:text-[#00B2FF] transition-colors duration-300"
+                    className="flex flex-col items-center text-2xl font-bold text-gray-800 hover:text-[#00B2FF] transition-colors duration-300"
                   >
-                    {item.label}
+                    <span>{item.label}</span>
+                    <span className="text-sm font-medium text-gray-500">
+                      {item.title}
+                    </span>
                   </button>
                 ))}
 
                 <button
                   onClick={() => handleNavigate("/contact")}
-                  className="mt-4 bg-[#00B2FF] text-white font-bold px-8 py-3 rounded-md text-lg"
+                  className=" flex flex-col items-center  text-white font-bold px-6  rounded-md text-lg"
                 >
-                  Contact Us
+                  📞
+                  <span className="text-sm font-medium text-gray-500">
+                    Contact
+                  </span>
                 </button>
               </div>
             </motion.div>

@@ -84,7 +84,7 @@ const PlansPage = () => {
     },
     {
       title: "Dependent Coverage to Age 26",
-      des: ": Young adults can remain on their parents' plans until their 26th birthday.",
+      des: "Young adults can remain on their parents' plans until their 26th birthday.",
       src: "https://assets.aceternity.com/the-first-rule.png",
     },
   ];
@@ -118,16 +118,16 @@ const PlansPage = () => {
   ];
 
   return (
-    <div className="space-y-10 md:px-50 ">
+    <div className="space-y-10  md:px-50 bg-gradient-to-r from-blue-300 via-white to-blue-300">
       {/* Page Header */}
 
       <div className="h-96 relative w-full overflow-hidden bg-slate-900 flex flex-col items-center justify-center">
         <div className="absolute inset-0 z-10 pointer-events-none bg-gradient-to-tr from-transparent via-slate-900/20 to-transparent" />
         <Boxes />
         <section className={cn("text-center z-40")}>
-          <h1 className="text-4xl md:text-5xl font-extrabold  text-[#00B2FF] ">
+          <h1 className="text-4xl md:text-5xl font-extrabold   text-[#00B2FF] ">
             Overview of ACA-Compliant{" "}
-            <span className="text-white md:pl-5 md:pr-5 bg-gradient-to-r from-orange-500 to-pink-500">
+            <span className="text-white md:pl-5 md:pr-5 mt-5 bg-gradient-to-r from-orange-500 to-pink-500">
               PPO Plans
             </span>
           </h1>
@@ -146,7 +146,7 @@ const PlansPage = () => {
       <AnimateOnScroll>
         <div className="text-center space-y-4 md:text-5xl text-2xl md:font-extrabold font-bold ">
           What is a{" "}
-          <span className="text-transparent  bg-clip-text tracking-tight md:font-extrabold md:text-5xl text-3xl font-extrabold bg-gradient-to-r from-orange-500 to-pink-500">
+          <span className="text-transparent  bg-clip-text tracking-tight md:font-extrabold md:text-5xl text-3xl font-extrabold bg-gradient-to-r from-orange-500 to-pink-500 ">
             PPO Plan?
           </span>
           <div className="w-full md:py-4 md:text-[20px] text-md text-gray-700">
@@ -174,7 +174,7 @@ const PlansPage = () => {
 
       {/* Download PDF Section */}
       <AnimateOnScroll delay={0.2}>
-        <section className="bg-gray-300/40 mb-20 backdrop-blur-sm border-t border-gray-400 shadow-xl transition-shadow shadow-pink-200  rounded-2xl p-12 text-center">
+        <section className="bg-gray-300/40  backdrop-blur-sm   shadow-xl transition-shadow   rounded-2xl p-12 text-center">
           <h2 className="text-3xl font-bold text-white flex flex-col md:flex-row items-center justify-center text-center space-y-4 md:space-y-0 md:space-x-2">
             <span className="text-[#00B2FF] px-2">Key Advantages</span>
             <span className="bg-gradient-to-r from-orange-500 to-pink-500 md:font-extrabold font-semibold text-3xl px-1 py-0 md:px-2 md:text-6xl ">
@@ -206,7 +206,7 @@ const PlansPage = () => {
           <div className="mt-8">
             <a
               href="/path-to-your-highlights.pdf"
-              className="bg-[#00B2FF] text-white font-bold px-8 py-3 rounded-md text-lg   hover:bg-gradient-to-r from-orange-500 to-pink-500 transition-all duration-700"
+              className="bg-[#00B2FF] text-white md:font-bold font-semibold md:px-8 px-4 py-3 rounded-md md:text-lg text-sm   hover:bg-gradient-to-r from-orange-500 to-pink-500 transition-all duration-700"
             >
               Download Plan Highlights PDF
             </a>
