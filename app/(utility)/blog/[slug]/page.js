@@ -3,7 +3,7 @@ import AnimateOnScroll from "../../../components/AnimateOnScroll";
 
 const SinglePostPage = () => {
   return (
-    <div className="py-12">
+    <div className="py-12 bg-gradient-to-r from-blue-300 via-white to-blue-300">
       <AnimateOnScroll>
         <article className="max-w-4xl mx-auto bg-gray-900/40 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-12">
           {/* Post Header */}

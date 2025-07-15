@@ -4,13 +4,16 @@ import AnimateOnScroll from "../../components/AnimateOnScroll";
 
 const BlogPage = () => {
   return (
-    <div className="space-y-16 py-12">
+    <div className="space-y-16 py-12 bg-gradient-to-r from-blue-300 via-white to-blue-300 ">
       {/* Page Header */}
       <section className="text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
-          The Pegasus <span className="text-[#00B2FF]">Blog</span>
+          <span className="text-[#00B2FF]">The Pegasus</span>{" "}
+          <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 pl-2 pr-2 ">
+            Blog
+          </span>
         </h1>
-        <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-300">
+        <p className="mt-4 max-w-2xl mx-auto text-lg text-[#323202]">
           Updates from our team, ACA insights, and tips for broker success.
         </p>
       </section>

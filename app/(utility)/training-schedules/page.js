@@ -2,13 +2,16 @@ import AnimateOnScroll from "../../components/AnimateOnScroll";
 
 const TrainingSchedulesPage = () => {
   return (
-    <div className="space-y-16 py-12">
+    <div className="space-y-16 py-12 bg-gradient-to-r from-blue-300 via-white to-blue-300">
       {/* Page Header */}
       <section className="text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
-          Training <span className="text-[#00B2FF]">Schedules</span>
+          <sapn className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 pl-2 pr-2 ">
+            Training
+          </sapn>{" "}
+          <span className="text-[#00B2FF]">Schedules</span>
         </h1>
-        <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-300">
+        <p className="mt-4 max-w-2xl mx-auto text-lg text-[#323202]">
           Stay up-to-date with our live webinars, certification sessions, and
           Q&A events. Click on an event for details and registration links.
         </p>
@@ -18,10 +21,6 @@ const TrainingSchedulesPage = () => {
       <AnimateOnScroll>
         <section className="max-w-6xl mx-auto">
           <div className="bg-gray-900/40 backdrop-blur-sm border border-white/10 rounded-2xl p-4 md:p-6">
-            {/* This is a responsive container for the Google Calendar iframe.
-              You will need to go to your public Google Calendar's settings,
-              get the "Embed code", and replace the src="" value below with your own.
-            */}
             <div className="relative h-0" style={{ paddingBottom: "75%" }}>
               {" "}
               {/* Aspect ratio container */}

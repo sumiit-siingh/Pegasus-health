@@ -70,7 +70,7 @@ const PartnerPage = () => {
           {/* Lead Capture Form & Onboarding Steps */}
           <section className="flex flex-col lg:flex-row flex-wrap gap-6">
             {/* Form Component is now placed directly */}
-            <div className="lg:col-span-3 flex-1 min-w-[300px]">
+            <div className="lg:col-span-3 flex-1 min-w-[500px]">
               <PartnershipForm />
             </div>
 

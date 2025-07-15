@@ -2,23 +2,32 @@ import AnimateOnScroll from "../../components/AnimateOnScroll";
 
 const PrivacyPolicyPage = () => {
   return (
-    <div className="py-12">
+    <div className="py-12 bg-gradient-to-r from-blue-300 via-white to-blue-300">
       <AnimateOnScroll>
-        <div className="max-w-4xl mx-auto bg-gray-900/40 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-12">
+        <div className="max-w-4xl mx-auto bg-white/10 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-12">
           {/* Page Header */}
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-extrabold text-white">
-              Privacy Policy
+              <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500   ">
+                Privacy
+              </span>{" "}
+              <span className="text-[#00B2FF] md:font-extrabold font-bold ">
+                Policy
+              </span>{" "}
             </h1>
             <p className="mt-4 text-gray-400">Last Updated: July 9, 2025</p>
           </div>
 
           {/* Legal Content - prose-invert styles the text for a dark background */}
-          <div className="prose lg:prose-xl max-w-none prose-invert text-white/60">
+          <div className="prose lg:prose-xl max-w-none prose-invert text-[#323202]">
             <p>
-              This Privacy Policy describes how Pegasus Health Group collects,
-              uses, and shares your personal information when you visit our
-              website or submit information through our forms.
+              This Privacy Policy describes how{" "}
+              <span className="text-[#00B2FF] md:font-extrabold font-bold ">
+                Pegasus
+              </span>{" "}
+              Health Group collects, uses, and shares your personal information
+              when you visit our website or submit information through our
+              forms.
             </p>
 
             <h2>1. Information We Collect</h2>

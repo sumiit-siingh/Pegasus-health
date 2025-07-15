@@ -2,24 +2,31 @@ import AnimateOnScroll from "../../components/AnimateOnScroll";
 
 const TermsOfUsePage = () => {
   return (
-    <div className="py-12">
+    <div className="py-12 bg-gradient-to-r from-blue-300 via-white to-blue-300">
       <AnimateOnScroll>
-        <div className="max-w-4xl mx-auto bg-gray-900/40 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-12">
+        <div className="max-w-4xl mx-auto bg-white/10 backdrop-blur-sm border border-[#bdbdb0] rounded-2xl p-8 md:p-12">
           {/* Page Header */}
-          <div className="text-center mb-12">
-            <h1 className="text-4xl md:text-5xl font-extrabold text-white">
-              Terms of Use
+          <div className="text-center mb-12 ">
+            <h1 className="text-4xl md:text-5xl font-extrabold text-[#323202]">
+              <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 pl-2 pr-2 text-white">
+                Terms
+              </span>{" "}
+              of <span className="text-[#00b2ff]">Use</span>
             </h1>
             <p className="mt-4 text-gray-400">Last Updated: July 9, 2025</p>
           </div>
 
           {/* Legal Content - prose-invert styles the text for a dark background */}
-          <div className="prose lg:prose-xl max-w-none prose-invert text-white/60">
+          <div className="prose lg:prose-xl max-w-none prose-invert text-[#323202]">
             <p>
-              Welcome to Pegasus Health Group. By accessing or using our
-              website, you agree to be bound by the terms and conditions set
-              forth below. If you do not wish to be bound by these terms and
-              conditions, you may not access or use the site.
+              Welcome to{" "}
+              <span className="text-[#00B2FF] md:font-extrabold font-bold ">
+                Pegasus
+              </span>{" "}
+              Health Group. By accessing or using our website, you agree to be
+              bound by the terms and conditions set forth below. If you do not
+              wish to be bound by these terms and conditions, you may not access
+              or use the site.
             </p>
 
             <h2>1. Use of the Site</h2>
