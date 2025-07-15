@@ -23,10 +23,7 @@ const DigitalResourcesPage = () => {
       {/* Page Header */}
       <section className="text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
-          <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 pl-2 pr-2 ">
-            {" "}
-            Digital
-          </span>{" "}
+          <span className="bg-[#00b2ff] pl-2 pr-2 "> Digital</span>{" "}
           <span className="text-[#00B2FF]">Resources</span>
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg text-[#323202]">

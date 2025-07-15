@@ -6,9 +6,7 @@ const TrainingSchedulesPage = () => {
       {/* Page Header */}
       <section className="text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-white">
-          <sapn className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 pl-2 pr-2 ">
-            Training
-          </sapn>{" "}
+          <sapn className="bg-[#00b2ff] pl-2 pr-2 ">Training</sapn>{" "}
           <span className="text-[#00B2FF]">Schedules</span>
         </h1>
         <p className="mt-4 max-w-2xl mx-auto text-lg text-[#323202]">
@@ -20,7 +18,7 @@ const TrainingSchedulesPage = () => {
       {/* Embedded Calendar Section */}
       <AnimateOnScroll>
         <section className="max-w-6xl mx-auto">
-          <div className="bg-gray-900/40 backdrop-blur-sm border border-white/10 rounded-2xl p-4 md:p-6">
+          <div className="bg-blue-100 backdrop-blur-sm border border-white/10 rounded-2xl p-4 md:p-6">
             <div className="relative h-0" style={{ paddingBottom: "75%" }}>
               {" "}
               {/* Aspect ratio container */}

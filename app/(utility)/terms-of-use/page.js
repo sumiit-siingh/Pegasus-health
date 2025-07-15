@@ -8,9 +8,7 @@ const TermsOfUsePage = () => {
           {/* Page Header */}
           <div className="text-center mb-12 ">
             <h1 className="text-4xl md:text-5xl font-extrabold text-[#323202]">
-              <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500 pl-2 pr-2 text-white">
-                Terms
-              </span>{" "}
+              <span className="bg-[#00b2ff] pl-2 pr-2 text-white">Terms</span>{" "}
               of <span className="text-[#00b2ff]">Use</span>
             </h1>
             <p className="mt-4 text-gray-400">Last Updated: July 9, 2025</p>

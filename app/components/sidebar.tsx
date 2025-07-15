@@ -170,7 +170,7 @@ export const SidebarLink = ({
     <Link
       href={link.href}
       className={cn(
-        "flex items-center justify-start hover:bg-gradient-to-r from-orange-300 to-pink-300  hover:scale-100 transition-transform duration-800 ease-in-out rounded-2xl p-3  gap-2 group/sidebar ",
+        "flex items-center text-neutral-700 dark:text-[#323202] justify-start hover:bg-gradient-to-r from-orange-300 via-pink-300 to-purple-300  hover:scale-100 transition-transform duration-800 ease-in-out rounded-2xl p-3  gap-2 group/sidebar ",
         className
       )}
       {...props}
@@ -182,7 +182,7 @@ export const SidebarLink = ({
           display: animate ? (open ? "inline-block" : "none") : "inline-block",
           opacity: animate ? (open ? 1 : 0) : 1,
         }}
-        className="text-neutral-700 dark:text-neutral-200 text-md group-hover/sidebar:translate-x-1 transition duration-150 whitespace-pre inline-block !p-0 !m-0"
+        className="text-neutral-700 dark:text-[#323202] text-md group-hover/sidebar:translate-x-1 transition duration-150 whitespace-pre inline-block !p-0 !m-0"
       >
         {link.label}
       </motion.span>

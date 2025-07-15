@@ -89,13 +89,10 @@ const BrokerAdvantagePage = () => {
       {/* Page Header */}
       <section className="text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-[#323202]">
-          Why{" "}
-          <span className="pr-4 pl-4 text-white bg-gradient-to-r from-orange-500 to-pink-500">
-            Brokers
-          </span>{" "}
+          Why <span className="pr-4 pl-4 text-white bg-[#00b2ff]">Brokers</span>{" "}
           Should Work with <span className="text-[#00B2FF]">Pegasus</span>
         </h1>
-        <p className="mt-4 max-w-2xl mx-auto text-lg text-gray-600">
+        <p className="mt-4 max-w-2xl mx-auto text-lg text-[#323202]">
           Choosing <span className="text-[#00B2FF] font-bold">Pegasus</span> as
           your Super Broker means unlocking a new level of efficiency, support,
           and earning potential. We are uniquely positioned to help independent
@@ -141,7 +138,7 @@ const BrokerAdvantagePage = () => {
               <motion.div
                 layoutId={`card-${active.title}-${id}`}
                 ref={ref}
-                className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+                className="w-full max-w-[500px]  h-full md:h-fit md:max-h-[90%]  flex flex-col bg-blue-200 dark:bg-blue-200 sm:rounded-3xl overflow-hidden"
               >
                 <motion.div layoutId={`image-${active.title}-${id}`}>
                   <Image
@@ -158,13 +155,13 @@ const BrokerAdvantagePage = () => {
                     <div className="">
                       <motion.h3
                         layoutId={`title-${active.title}-${id}`}
-                        className="font-bold text-[#00B2FF] md:text-xl text-2xl dark:text-neutral-200"
+                        className="font-bold text-[#00B2FF] md:text-xl text-2xl dark:text-[#00b2ff]"
                       >
                         {active.title}
                       </motion.h3>
                       <motion.p
                         layoutId={`description-${active.description}-${id}`}
-                        className="text-[#323202] dark:text-neutral-400 md:text-normal text-xl mt-2"
+                        className="text-[#323202] dark:text-[#323202] md:text-normal text-xl mt-2"
                       >
                         {active.description}
                       </motion.p>
@@ -176,7 +173,7 @@ const BrokerAdvantagePage = () => {
                       initial={{ opacity: 0 }}
                       animate={{ opacity: 1 }}
                       exit={{ opacity: 0 }}
-                      className="text-neutral-600 text-xl md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
+                      className="text-neutral-600 text-xl md:text-sm lg:text-base h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-[#323202] [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                     >
                       {typeof active.content === "function"
                         ? active.content()
@@ -194,7 +191,7 @@ const BrokerAdvantagePage = () => {
               layoutId={`card-${card.title}-${id}`}
               key={`card-${card.title}-${id}`}
               onClick={() => setActive(card)}
-              className="p-4 flex md:flex-row justify-between items-center hover:bg-neutral-50 dark:hover:bg-neutral-800 rounded-xl cursor-pointer"
+              className="p-4 flex md:flex-row justify-between items-center dark:bg-blue-200  hover:bg-neutral-50 dark:hover:bg-gradient-to-r from-blue-300 via-white to-blue-300 hover:scale-105 ease-in-out duration-100 mb-5 rounded-xl cursor-pointer"
             >
               <div className="flex gap-4 md:flex-row ">
                 <Image
@@ -207,13 +204,13 @@ const BrokerAdvantagePage = () => {
                 <div className="">
                   <motion.h3
                     layoutId={`title-${card.title}-${id}`}
-                    className="font-medium md:font-bold md:text-lg text-sm inline  text-neutral-800 dark:text-neutral-200 text-start md:text-left"
+                    className="font-medium md:font-bold md:text-lg text-sm inline  text-neutral-800 dark:text-[#00b2ff] text-start md:text-left"
                   >
                     {card.title}
                   </motion.h3>
                   <motion.p
                     layoutId={`description-${card.description}-${id}`}
-                    className="text-neutral-600 dark:text-neutral-400 text-start md:text-left"
+                    className="text-[#323202] dark:text-[#323202] text-start md:text-left"
                   >
                     {card.description}
                   </motion.p>
@@ -221,7 +218,7 @@ const BrokerAdvantagePage = () => {
               </div>
               <motion.button
                 layoutId={`button-${card.title}-${id}`}
-                className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-green-500 hover:text-white text-black mt-4 md:mt-0"
+                className="px-4 py-2 text-sm rounded-full font-bold bg-gray-100 hover:bg-green-500 hover:text-white text-[#323202] mt-4 md:mt-0"
               >
                 {card.ctaText}
               </motion.button>
@@ -232,31 +229,31 @@ const BrokerAdvantagePage = () => {
           {/* Support Structure Section */}
           <section>
             <h2 className="md:text-5xl text-3xl mt-10 font-bold text-center  text-[#323202]">
-              <span className="md:font-extrabold  font-extrabold text-white pl-2  pr-2  bg-gradient-to-r from-orange-500 to-pink-500">
+              <span className="md:font-extrabold  font-extrabold text-white pl-2  pr-2  bg-[#00b2ff]">
                 Support Structure
               </span>
               , Tools & Referral Fees
             </h2>
             <div className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-8  ">
-              <div className="bg-white/50 p-6 rounded-lg border border-gray-400 hover:border-orange-300 shadow-md hover:shadow-xl transition-shadow hover:shadow-pink-300 duration-700">
-                <IconHeadset className="h-8 w-8 text-[#00B2FF] mb-3" />
-                <h3 className="text-xl font-semibold text-gray-900">
+              <div className="bg-white/50 p-6 rounded-lg border border-gray-400 hover:border-blue-500 shadow-md hover:shadow-xl transition-shadow hover:shadow-blue-300 duration-700">
+                <IconHeadset className="h-8 w-8 text-[#323202] mb-3" />
+                <h3 className="text-xl font-semibold text-[#00b2ff]">
                   Personalized Account Management
                 </h3>
-                <p className="mt-2 text-gray-600">
+                <p className="mt-2 text-[#323202] md:text-xl">
                   Every partner receives dedicated support from an experienced
                   account manager committed to your success.
                 </p>
               </div>
-              <div className="bg-white/50 border border-gray-400 hover:border-orange-300 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow hover:shadow-pink-300 duration-700">
-                <IconLock className="h-8 w-8 text-[#00B2FF] mb-3" />
-                <h3 className="text-xl font-semibold text-gray-900">
+              <div className="bg-white/50 border border-gray-400 p-6 rounded-lg hover:border-blue-500 shadow-md hover:shadow-xl transition-shadow hover:shadow-blue-300 duration-700">
+                <IconLock className="h-8 w-8 text-[#323202] mb-3" />
+                <h3 className="text-xl font-semibold text-[#00b2ff]">
                   Broker Portal
                 </h3>
-                <p className="mt-2 text-gray-600">
+                <p className="mt-2 text-[#323202] md:text-xl  ">
                   Our secure online portal is your command center, offering:
                 </p>
-                <ul className="mt-3 list-disc list-inside text-gray-600 space-y-1 text-sm">
+                <ul className="mt-3 list-disc list-inside text-[#323202] space-y-1 text-md">
                   <li>Instant Quoting & Comparison Tools</li>
                   <li>Electronic Application Submission</li>
                   <li>Client Management & Tracking</li>
@@ -264,22 +261,22 @@ const BrokerAdvantagePage = () => {
                   <li>Resource Library (Forms, Marketing, FAQs)</li>
                 </ul>
               </div>
-              <div className="bg-white/50 border border-gray-400 hover:border-orange-300 p-6 rounded-lg  shadow-md hover:shadow-xl transition-shadow hover:shadow-pink-300 duration-700">
+              <div className="bg-white/50 border border-gray-400 hover:border-blue-500 p-6 rounded-lg  shadow-md hover:shadow-xl transition-shadow hover:shadow-blue-300 duration-700">
                 <IconChartBar className="h-8 w-8 text-[#00B2FF] mb-3" />
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="text-xl font-semibold text-[#00b2ff]">
                   Timely & Accurate Referral Fees
                 </h3>
-                <p className="mt-2 text-gray-600">
+                <p className="mt-2 text-[#323202] md:text-xl">
                   We pride ourselves on transparent and prompt payouts, so you
                   can focus on selling with confidence.
                 </p>
               </div>
-              <div className="bg-white/50 border border-gray-400 hover:border-orange-300 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow hover:shadow-pink-300 duration-700">
+              <div className="bg-white/50 border border-gray-400 hover:border-blue-500 p-6 rounded-lg shadow-md hover:shadow-xl transition-shadow hover:shadow-blue-300 duration-700">
                 <IconShieldCheck className="h-8 w-8 text-[#00B2FF] mb-3" />
-                <h3 className="text-xl font-semibold text-gray-900">
+                <h3 className="text-xl font-semibold text-[#00b2ff]">
                   Compliance Assistance
                 </h3>
-                <p className="mt-2 text-gray-600">
+                <p className="mt-2 text-[#323202] md:text-xl">
                   We help you stay up-to-date with ACA regulations and carrier
                   requirements, reducing your compliance burden.
                 </p>
@@ -290,7 +287,7 @@ const BrokerAdvantagePage = () => {
           {/* Comparison Table Section */}
           <section>
             <h2 className="md:text-4xl text-xl font-bold text-center text-gray-800">
-              <span className="md:font-extrabold  font-extrabold text-white pl-2  pr-2  bg-gradient-to-r from-orange-500 to-pink-500">
+              <span className="md:font-extrabold  font-extrabold text-white pl-2  pr-2  bg-[#00b2ff]">
                 Comparison
               </span>{" "}
               to Traditional Models
@@ -304,19 +301,19 @@ const BrokerAdvantagePage = () => {
                         <tr>
                           <th
                             scope="col"
-                            className="py-3.5 pl-4 pr-3 text-left text-sm md:text-xl font-semibold md:font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500 sm:pl-6"
+                            className="py-3.5 pl-4 pr-3 text-left text-sm md:text-xl font-semibold md:font-extrabold  text-[#00b2ff] sm:pl-6"
                           >
                             Feature
                           </th>
                           <th
                             scope="col"
-                            className="px-3 py-3.5 text-left text-sm md:text-xl font-semibold md:font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500"
+                            className="px-3 py-3.5 text-left text-sm md:text-xl font-semibold md:font-extrabold  text-[#00b2ff]"
                           >
                             Traditional GA/FMO
                           </th>
                           <th
                             scope="col"
-                            className="px-3 py-3.5 text-left text-sm md:text-xl font-semibold md:font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500"
+                            className="px-3 py-3.5 text-left text-sm md:text-xl font-semibold md:font-extrabold  text-[#00b2ff]"
                           >
                             Pegasus (Super Broker)
                           </th>
@@ -324,57 +321,57 @@ const BrokerAdvantagePage = () => {
                       </thead>
                       <tbody className="divide-y divide-gray-200 bg-white">
                         <tr>
-                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-[#323202] sm:pl-6">
                             Product Focus
                           </td>
-                          <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                          <td className="whitespace-nowrap px-3 py-4 text-sm text-[#323202]">
                             Often broad, less specialized
                           </td>
-                          <td className="whitespace-nowrap px-3 py-4 text-sm font-semibold text-gray-900 bg-blue-100/50">
+                          <td className="whitespace-nowrap px-3 py-4 text-sm font-semibold text-[#323202] bg-blue-100/50">
                             Focused on premium ACA-compliant PPO plans
                           </td>
                         </tr>
                         <tr>
-                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-[#323202] sm:pl-6">
                             Support Level
                           </td>
-                          <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                          <td className="whitespace-nowrap px-3 py-4 text-sm text-[#323202]">
                             Generalized, reactive, self-service
                           </td>
-                          <td className="whitespace-nowrap px-3 py-4 text-sm font-semibold text-gray-900 bg-blue-100/50">
+                          <td className="whitespace-nowrap px-3 py-4 text-sm font-semibold text-[#323202] bg-blue-100/50">
                             Proactive, personalized, dedicated
                           </td>
                         </tr>
                         <tr>
-                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-[#323202] sm:pl-6">
                             Technology
                           </td>
-                          <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                          <td className="whitespace-nowrap px-3 py-4 text-sm text-[#323202]">
                             Varies; often fragmented or outdated
                           </td>
-                          <td className="whitespace-nowrap px-3 py-4 text-sm font-semibold text-gray-900 bg-blue-100/50">
+                          <td className="whitespace-nowrap px-3 py-4 text-sm font-semibold text-[#323202] bg-blue-100/50">
                             Integrated, cutting-edge broker portal
                           </td>
                         </tr>
                         <tr>
-                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-[#323202] sm:pl-6">
                             Referral Fees Payouts
                           </td>
-                          <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                          <td className="whitespace-nowrap px-3 py-4 text-sm text-[#323202]">
                             Can be slow and less transparent
                           </td>
-                          <td className="whitespace-nowrap px-3 py-4 text-sm font-semibold text-gray-900 bg-blue-100/50">
+                          <td className="whitespace-nowrap px-3 py-4 text-sm font-semibold text-[#323202] bg-blue-100/50">
                             Transparent, timely, and competitive
                           </td>
                         </tr>
                         <tr>
-                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-gray-900 sm:pl-6">
+                          <td className="whitespace-nowrap py-4 pl-4 pr-3 text-sm font-medium text-[#323202] sm:pl-6">
                             Value Proposition
                           </td>
-                          <td className="whitespace-nowrap px-3 py-4 text-sm text-gray-500">
+                          <td className="whitespace-nowrap px-3 py-4 text-sm text-[#323202]">
                             Primarily access to contracts
                           </td>
-                          <td className="whitespace-nowrap px-3 py-4 text-sm font-semibold text-gray-900 bg-blue-100/50">
+                          <td className="whitespace-nowrap px-3 py-4 text-sm font-semibold text-[#323202] bg-blue-100/50">
                             Strategic partnership and growth enablement
                           </td>
                         </tr>

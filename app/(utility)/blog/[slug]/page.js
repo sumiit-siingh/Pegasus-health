@@ -5,13 +5,13 @@ const SinglePostPage = () => {
   return (
     <div className="py-12 bg-gradient-to-r from-blue-300 via-white to-blue-300">
       <AnimateOnScroll>
-        <article className="max-w-4xl mx-auto bg-gray-900/40 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-12">
+        <article className="max-w-4xl mx-auto bg-blue-100 backdrop-blur-sm border border-white/10 rounded-2xl p-8 md:p-12">
           {/* Post Header */}
           <header className="text-center mb-12">
             <p className="text-base font-semibold text-[#00B2FF]">
               ACA INSIGHTS
             </p>
-            <h1 className="mt-2 text-4xl md:text-5xl font-extrabold tracking-tight text-white">
+            <h1 className="mt-2 text-4xl md:text-5xl font-extrabold tracking-tight text-[#323202]">
               Understanding the New ACA-Compliant Plan Changes
             </h1>
             <p className="mt-6 text-lg text-gray-400">
@@ -29,7 +29,7 @@ const SinglePostPage = () => {
           />
 
           {/* Post Content */}
-          <div className="prose prose-xl max-w-none prose-invert text-white/80">
+          <div className="prose prose-xl max-w-none prose-invert text-[#323202]">
             <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
               nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi.

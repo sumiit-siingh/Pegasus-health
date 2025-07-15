@@ -52,9 +52,9 @@ export function ContactForm() {
   };
 
   return (
-    <div className="shadow-input border border-gray-400 mx-auto w-full max-w-lg rounded-2xl bg-white p-4 md:p-8 dark:bg-black">
-      <h2 className="text-xl font-bold text-[#323202] dark:text-neutral-200">
-        Send an Inquiry
+    <div className="shadow-input border border-gray-400 mx-auto w-full max-w-lg rounded-2xl bg-white p-4 md:p-8 dark:bg-blue-100">
+      <h2 className="text-xl font-bold text-[#323202] ">
+        Send an <span className="text-[#00b2ff]">Inquiry</span>
       </h2>
 
       <form className="my-8" onSubmit={handleSubmit}>
@@ -68,7 +68,7 @@ export function ContactForm() {
               required
               value={formData.fullName}
               onChange={handleChange}
-              className="bg-gray-300"
+              className="bg-gray-300 dark:bg-neutral-200 dark:text-neutral-400"
             />
           </LabelInputContainer>
           <LabelInputContainer>
@@ -80,7 +80,7 @@ export function ContactForm() {
               required
               value={formData.email}
               onChange={handleChange}
-              className="bg-gray-300"
+              className="bg-gray-300 dark:bg-neutral-200 dark:text-neutral-400"
             />
           </LabelInputContainer>
         </div>
@@ -94,7 +94,7 @@ export function ContactForm() {
               type="tel"
               value={formData.phone}
               onChange={handleChange}
-              className="bg-gray-300"
+              className="bg-gray-300 dark:bg-neutral-200 dark:text-neutral-400"
             />
           </LabelInputContainer>
           <LabelInputContainer>
@@ -104,9 +104,13 @@ export function ContactForm() {
               required
               value={formData.subject}
               onChange={handleChange}
-              className="bg-gray-300"
+              className="bg-gray-300 dark:bg-neutral-200 dark:text-neutral-400"
             >
-              <option value="" disabled className="bg-gray-300 text-black">
+              <option
+                value=""
+                disabled
+                className="bg-gray-300 text-[#323202] dark:text-[#323202]"
+              >
                 Select a subject...
               </option>
               <option value="General Inquiry">General Inquiry</option>
@@ -126,7 +130,7 @@ export function ContactForm() {
             value={formData.message}
             onChange={handleChange}
             rows={4}
-            className="bg-gray-300"
+            className="bg-gray-300 dark:bg-neutral-200 dark:text-neutral-400"
           />
         </LabelInputContainer>
 

@@ -10,16 +10,16 @@ const ContactPage = () => {
     <div className=" mx-auto px-4  bg-gradient-to-r from-blue-300 via-white to-blue-300">
       {/* Page Header */}
       <AnimateOnScroll>
-        <div className=" bg-transparen rounded-2xl p-8 md:p-12 space-y-20">
+        <div className=" bg-transparent rounded-2xl p-8 md:p-12 space-y-20">
           {/* Page Header */}
           <section className="text-center">
             <h1 className="text-4xl md:text-5xl font-extrabold ">
-              <span className="bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500  text-white pr-2 pl-2">
+              <span className="bg-[#00b2ff]  text-white pr-2 pl-2">
                 Contact
               </span>{" "}
               <span className="text-[#00B2FF]">Us</span>
             </h1>
-            <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-700">
+            <p className="mt-4 max-w-3xl mx-auto text-lg text-[#323202]">
               We're here to help you succeed! Reach out to the Pegasus team with
               any questions or to start your partnership journey.
             </p>
@@ -36,10 +36,10 @@ const ContactPage = () => {
                     <IconMapPin className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-800">
+                    <h3 className="text-lg font-semibold text-[#323202]">
                       Office Address
                     </h3>
-                    <p className="text-gray-600">
+                    <p className="text-[#323202]">
                       [Full Street Address]
                       <br />
                       [City], Florida [Zip Code]
@@ -51,10 +51,10 @@ const ContactPage = () => {
                     <IconPhone className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-800">
+                    <h3 className="text-lg font-semibold text-[#323202]">
                       Phone
                     </h3>
-                    <p className="text-gray-600">[Your Phone Number]</p>
+                    <p className="text-[#323202]">[Your Phone Number]</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
@@ -62,12 +62,12 @@ const ContactPage = () => {
                     <IconMail className="h-6 w-6 text-blue-600" />
                   </div>
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-800">
+                    <h3 className="text-lg font-semibold text-[#323202]">
                       Email
                     </h3>
                     <a
                       href="mailto:info@pegasushealth.com"
-                      className="text-gray-600 hover:text-blue-600"
+                      className="text-[#323202] hover:text-blue-600"
                     >
                       [Your Email Address]
                     </a>

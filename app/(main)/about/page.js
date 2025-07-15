@@ -13,10 +13,11 @@ const AboutPage = () => {
           <div className="bg-white/70 backdrop-blur-2xl  opacity-90 border border-white/50 rounded-2xl p-8 md:p-12 space-y-16">
             <section className="text-center">
               <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight text-gray-900">
-                <span className="bg-gradient-to-r from-orange-500 to-pink-500 text-white md:pl-5 md:pr-5">
+                <span className="bg-[#00b2ff] text-white md:pl-5 md:pr-5">
                   About
                 </span>{" "}
-                <span className="text-[#00B2FF]">Pegasus Health Group</span>
+                <span className="text-[#00B2FF]">Pegasus </span>
+                <span className="text-[#323202]">Health Group</span>
               </h1>
               <p className="mt-5 max-w-2xl mx-auto text-lg  text-gray-700">
                 Our story, our mission, and the people leading the charge.
@@ -69,9 +70,7 @@ const AboutPage = () => {
 
             <section className="text-center">
               <h2 className="text-5xl font-extrabold  ">
-                <span className="bg-gradient-to-r from-orange-500 to-pink-500 text-white md:pl-4">
-                  Leader
-                </span>
+                <span className="bg-[#00b2ff] text-white md:pl-4">Leader</span>
                 <span className="text-[#00B2FF] bg-white">ship</span>
               </h2>
               <p className="mt-10 text-gray-500">
@@ -136,21 +135,21 @@ const AboutPage = () => {
               <div className="relative z-10   bg-opacity-80 rounded-lg p-5 md:p-12">
                 <span className="relative md:text-center text-start  z-10 md:p-8  text-black text-sm md:text-lg">
                   The name{" "}
-                  <span className="text-[#00B2FF] bg-gradient-to-r from-orange-500 to-pink-500 pr-2 pl-2 md:font-extrabold font-semibold ">
+                  <span className="text-[#00B2FF]  md:font-extrabold font-semibold ">
                     Pegasus
                   </span>{" "}
                   was chosen to symbolize the core values we bring to our
                   partnerships. In Greek mythology, Pegasus is a winged divine
                   horse, representing{" "}
-                  <span className="  tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-pink-500 font-bold md:text-2xl text-md">
+                  <span className="  tracking-tight bg-clip-text text-transparent bg-[#00b2ff] font-bold md:text-2xl text-md">
                     Strength
                   </span>
                   ,{" "}
-                  <span className=" tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-pink-500 font-bold md:text-2xl text-md">
+                  <span className=" tracking-tight bg-clip-text text-transparent bg-[#00b2ff] font-bold md:text-2xl text-md">
                     Swiftness
                   </span>
                   , and{" "}
-                  <span className=" tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-pink-500 font-bold md:text-2xl text-md">
+                  <span className=" tracking-tight bg-clip-text text-transparent bg-[#00b2ff] font-bold md:text-2xl text-md">
                     Inspiration.
                   </span>{" "}
                   <span>
@@ -163,7 +162,7 @@ const AboutPage = () => {
                 </span>
                 <div className="text-start md:space-y-10 space-y-4 mt-10">
                   <div className="flex flex-col md:flex-row md:items-start md:gap-2">
-                    <span className="font-semibold text-white w-fit md:text-2xl text-sm bg-gradient-to-r from-orange-500 to-pink-500 px-2">
+                    <span className="font-semibold text-white w-fit md:text-2xl text-sm bg-[#00b2ff] px-2">
                       Strength
                     </span>
                     <span className="text-black md:text-xl text-xs">
@@ -173,7 +172,7 @@ const AboutPage = () => {
                   </div>
 
                   <div className="flex flex-col md:flex-row md:items-start  md:gap-2">
-                    <span className="font-semibold  text-white w-fit md:text-2xl text-sm bg-gradient-to-r from-orange-500 to-pink-500 px-2">
+                    <span className="font-semibold  text-white w-fit md:text-2xl text-sm bg-[#00b2ff] px-2">
                       Swiftness
                     </span>
                     <span className="text-black md:text-xl text-xs">
@@ -183,7 +182,7 @@ const AboutPage = () => {
                   </div>
 
                   <div className="flex flex-col md:flex-row md:items-start md:gap-2">
-                    <span className="font-semibold text-white w-fit md:text-2xl text-sm bg-gradient-to-r from-orange-500 to-pink-500 px-2">
+                    <span className="font-semibold text-white w-fit md:text-2xl text-sm bg-[#00b2ff] px-2">
                       Inspiration
                     </span>
                     <span className="text-black md:text-xl text-xs">

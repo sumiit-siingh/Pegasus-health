@@ -150,13 +150,13 @@ export default function Home() {
       <BackgroundBeams className="min-h-screen w-full text-gray-800 p-4 flex items-center justify-center">
         <AnimateOnScroll>
           <div className="container mx-auto text-center mt-10">
-            <h2 className="text-5xl md:text-6xl h-20 font-extrabold text-[#032328]">
+            <h2 className="text-5xl md:text-6xl h-20 font-extrabold text-[#323202]">
               Plan{" "}
-              <span className="bg-gradient-to-r from-orange-500 to-pink-500 text-white md:pl-5 md:pr-5">
+              <span className="bg-[#00B2FF] text-white md:pl-5 md:pr-5">
                 Highlights
               </span>
             </h2>
-            <p className="mt-4 text-lg text-gray-600">
+            <p className="mt-4 text-lg md:text-2xl text-[#323202] font-bitter-regular">
               <span className="text-[#00B2FF] md:font-extrabold font-bold ">
                 Pegasus
               </span>{" "}
@@ -202,7 +202,7 @@ export default function Home() {
             <div className="mt-10">
               <a
                 href="/partner-with-us"
-                className=" bg-gradient-to-r from-orange-500 to-pink-500 text-white font-bold px-8 py-4 rounded-md text-lg hover:bg-black transition-all duration-300"
+                className=" bg-[#00B2FF] hover:bg-[#006eff] font-bold px-8 text-white py-4 rounded-md text-lg transition-all duration-300"
               >
                 Partner with Us
               </a>

@@ -20,28 +20,28 @@ export function HeroSidebar() {
       label: "Home",
       href: "/",
       icon: (
-        <IconHome className="h-7 w-7 shrink-0 text-neutral-700 dark:text-neutral-200" />
+        <IconHome className="h-7 w-7 shrink-0 text-neutral-700 dark:text-[#323202]" />
       ),
     },
     {
       label: "About Pegasus",
       href: "/about",
       icon: (
-        <IconUsers className="h-7 w-7 shrink-0 text-neutral-700 dark:text-neutral-200" />
+        <IconUsers className="h-7 w-7 shrink-0 text-neutral-700 dark:text-[#323202]" />
       ),
     },
     {
       label: "Plans",
       href: "/plans",
       icon: (
-        <IconReportMoney className="h-7 w-7 shrink-0 text-neutral-700 dark:text-neutral-200" />
+        <IconReportMoney className="h-7 w-7 shrink-0 text-neutral-700 dark:text-[#323202]" />
       ),
     },
     {
       label: "Broker Advantage",
       href: "/broker-advantage",
       icon: (
-        <IconChartInfographic className="h-7 w-7 shrink-0 text-neutral-700 dark:text-neutral-200" />
+        <IconChartInfographic className="h-7 w-7 shrink-0 text-neutral-700 dark:text-[#323202]" />
       ),
     },
 
@@ -49,7 +49,7 @@ export function HeroSidebar() {
       label: "Partner with us",
       href: "/partner-with-us",
       icon: (
-        <FaRegHandshake className="h-7 w-7 shrink-0 text-neutral-700 dark:text-neutral-200" />
+        <FaRegHandshake className="h-7 w-7 shrink-0 text-neutral-700 dark:text-[#323202]" />
       ),
     },
   ];
@@ -71,7 +71,7 @@ export function HeroSidebar() {
               label: "Contact Us",
               href: "/contact",
               icon: (
-                <IconMessage className="h-7 w-7 shrink-0 text-neutral-700 dark:text-neutral-200" />
+                <IconMessage className="h-7 w-7 shrink-0 text-neutral-700 dark:text-[#323202]" />
               ),
             }}
           />

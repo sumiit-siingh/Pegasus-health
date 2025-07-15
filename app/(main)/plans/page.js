@@ -127,7 +127,7 @@ const PlansPage = () => {
         <section className={cn("text-center z-40")}>
           <h1 className="text-4xl md:text-5xl font-extrabold   text-[#00B2FF] ">
             Overview of ACA-Compliant{" "}
-            <span className="text-white md:pl-5 md:pr-5 mt-5 bg-gradient-to-r from-orange-500 to-pink-500">
+            <span className="text-white md:pl-2 md:pr-2 mt-5 bg-[#00b2ff]">
               PPO Plans
             </span>
           </h1>
@@ -146,7 +146,7 @@ const PlansPage = () => {
       <AnimateOnScroll>
         <div className="text-center space-y-4 md:text-5xl text-2xl md:font-extrabold font-bold ">
           What is a{" "}
-          <span className="text-transparent  bg-clip-text tracking-tight md:font-extrabold md:text-5xl text-3xl font-extrabold bg-gradient-to-r from-orange-500 to-pink-500 ">
+          <span className=" tracking-tight md:font-extrabold md:text-5xl text-3xl font-extrabold text-[#00b2ff] ">
             PPO Plan?
           </span>
           <div className="w-full md:py-4 md:text-[20px] text-md text-gray-700">
@@ -159,7 +159,7 @@ const PlansPage = () => {
         <div className="mt-16">
           <h2 className="text-3xl font-extrabold text-center mb-4">
             Key Features of ACA-Compliant{" "}
-            <span className="bg-gradient-to-r from-orange-500 to-pink-500 text-white md:px-2 font-extrabold">
+            <span className="bg-[#00b2ff] text-white md:px-2 font-extrabold">
               PPO Plans
             </span>
           </h2>
@@ -177,7 +177,7 @@ const PlansPage = () => {
         <section className="bg-gray-300/40  backdrop-blur-sm   shadow-xl transition-shadow   rounded-2xl p-12 text-center">
           <h2 className="text-3xl font-bold text-white flex flex-col md:flex-row items-center justify-center text-center space-y-4 md:space-y-0 md:space-x-2">
             <span className="text-[#00B2FF] px-2">Key Advantages</span>
-            <span className="bg-gradient-to-r from-orange-500 to-pink-500 md:font-extrabold font-semibold text-3xl px-1 py-0 md:px-2 md:text-6xl ">
+            <span className="bg-[#00b2ff] md:font-extrabold font-semibold text-3xl px-1 py-0 md:px-2 md:text-6xl ">
               vs.
             </span>
             <span className="text-[#00B2FF] px-2">Market Competitors</span>
@@ -191,9 +191,9 @@ const PlansPage = () => {
             {sellingPoints.map((point, index) => (
               <div
                 key={index}
-                className="max-w-md border border-gray-400 hover:border-orange-300 p-6 rounded-lg bg-white shadow-md hover:shadow-xl transition-shadow hover:shadow-pink-300 duration-700 space-y-5 md:mt-0 mt-4 md"
+                className="max-w-md border border-gray-400 hover:border-blue-500 p-6 rounded-lg bg-white shadow-md hover:shadow-xl transition-shadow hover:shadow-blue-300 duration-700 space-y-5 md:mt-0 mt-4 md"
               >
-                <h2 className="md:text-xl text-lg md:font-bold font-semibold text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-pink-500">
+                <h2 className="md:text-xl text-lg md:font-bold font-semibold text-[#00b2ff]">
                   {point.title}
                 </h2>
                 <p className="md:text-md text-sm md:font-semibold font-normal mt-2 text-gray-600">

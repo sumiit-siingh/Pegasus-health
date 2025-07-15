@@ -6,7 +6,7 @@ const FaqPage = () => {
       {/* Page Header */}
       <section className="text-center">
         <h1 className="text-4xl md:text-5xl font-extrabold ">
-          <span className="text-white bg-gradient-to-r from-orange-500 via-pink-500 to-purple-500">
+          <span className="text-white bg-[#00b2ff] pl-2 pr-2">
             Frequently Asked
           </span>{" "}
           <span className="text-[#00B2FF]">Questions</span>

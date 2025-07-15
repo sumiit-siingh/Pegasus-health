@@ -54,13 +54,13 @@ const PartnerPage = () => {
             <h1 className="text-4xl md:text-5xl md:h-20 font-extrabold text-[#323202]  ">
               {" "}
               Unlock Your{" "}
-              <span className="bg-gradient-to-r pr-2 pl-2 from-orange-500 via-pink-500 to-purple-500 text-white">
+              <span className="bg-[#00b2ff] pl-2 pr-2   text-white">
                 Full Potential
               </span>{" "}
               with
               <span className="text-[#00B2FF]"> Pegasus</span>
             </h1>
-            <p className="mt-4 max-w-3xl mx-auto text-lg text-gray-700">
+            <p className="mt-4 max-w-3xl mx-auto text-lg text-[#323202]">
               Joining the Pegasus network is a straightforward process designed
               to get you up and running quickly. We're eager to welcome you to
               our growing family of successful brokers.
@@ -75,11 +75,12 @@ const PartnerPage = () => {
             </div>
 
             {/* Onboarding Steps */}
-            <div className="lg:col-span-2 flex-1 min-w-[300px] space-y-4 border border-gray-300 md:p-10 p-4 rounded-lg bg-white/50 backdrop-blur-lg">
-              <h2 className="text-xl md:text-2xl md:font-extrabold font-bold text-neutral-800 mb-4">
-                Seamless Onboarding Process
+            <div className="lg:col-span-2 flex-1 min-w-[300px]  border border-gray-300 md:p-10 p-4 rounded-lg bg-blue-100 backdrop-blur-lg">
+              <h2 className="text-xl md:text-2xl md:font-extrabold font-bold text-[#323202] mb-4">
+                Seamless <span className="text-[#00b2ff]">Onboarding</span>{" "}
+                Process
               </h2>
-              <div className="space-y-4">
+              <div className="md:space-y-15">
                 {onboardingSteps.map((step, index) => (
                   <div
                     key={index}
@@ -107,7 +108,8 @@ const PartnerPage = () => {
           {/* Testimonials Section */}
           <section className="text-center bg-gray-100/50 md:p-12 p-5 w-full rounded-2xl">
             <h2 className="text-3xl font-bold text-gray-800">
-              What Our Partners Say
+              What Our{" "}
+              <span className="text-[#00B2FF] font-bold ">Partners</span> Say
             </h2>
             <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
               <div className="bg-white p-6 rounded-lg shadow-md transition-transform duration-300 hover:-translate-y-1">

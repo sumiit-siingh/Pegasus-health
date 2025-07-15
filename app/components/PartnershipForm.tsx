@@ -45,18 +45,22 @@ export function PartnershipForm() {
   };
 
   return (
-    <div className="shadow-input mx-auto w-full max-w-lg rounded-2xl border border-gray-300 bg-white p-4 md:p-8 dark:bg-black">
-      <h2 className="text-xl md:text-2xl md:font-extrabold font-bold text-neutral-800 dark:text-neutral-200">
-        Become a Pegasus Partner
+    <div className="shadow-input mx-auto w-full max-w-lg rounded-2xl border border-gray-300 bg-white p-4 md:p-8 dark:bg-blue-100">
+      <h2 className="text-xl md:text-2xl md:font-extrabold font-bold text-neutral-800 dark:text-[#323202]">
+        Become a{" "}
+        <span className="text-[#00B2FF] md:font-extrabold font-bold md:text-3xl ">
+          Pegasus
+        </span>{" "}
+        <span className="text-[#323202]">Partner</span>
       </h2>
-      <p className="mt-2 max-w-sm text-sm text-neutral-600 dark:text-neutral-300">
+      <p className="mt-2 max-w-sm text-sm text-neutral-600 dark:text-[#323202]">
         Start your journey with us by filling out the inquiry form below.
       </p>
 
       <form className="my-8" onSubmit={handleSubmit}>
         {/* Grid container for two-column layout on medium screens and up */}
-        <div className="grid grid-cols-1 gap-y-4 gap-x-4 md:grid-cols-2">
-          <LabelInputContainer>
+        <div className="grid grid-cols-1 gap-y-4 gap-x-4 md:grid-cols-2 ">
+          <LabelInputContainer className=" text-[#323202]">
             <Label htmlFor="fullName">Full Name</Label>
             <Input
               id="fullName"
@@ -65,11 +69,13 @@ export function PartnershipForm() {
               required
               value={formData.fullName}
               onChange={handleChange}
-              className="bg-gray-300"
+              className="bg-gray-300  dark:bg-neutral-200 dark:text-neutral-400"
             />
           </LabelInputContainer>
           <LabelInputContainer>
-            <Label htmlFor="email">Email Address</Label>
+            <Label htmlFor="email" className="text-[#323202]">
+              Email Address
+            </Label>
             <Input
               id="email"
               placeholder="john.doe@example.com"
@@ -77,11 +83,13 @@ export function PartnershipForm() {
               required
               value={formData.email}
               onChange={handleChange}
-              className="bg-gray-300"
+              className="bg-gray-300 dark:bg-neutral-200 dark:text-neutral-400 "
             />
           </LabelInputContainer>
           <LabelInputContainer>
-            <Label htmlFor="phone">Phone Number</Label>
+            <Label htmlFor="phone" className="text-[#323202]">
+              Phone Number
+            </Label>
             <Input
               id="phone"
               placeholder="(123) 456-7890"
@@ -89,18 +97,20 @@ export function PartnershipForm() {
               required
               value={formData.phone}
               onChange={handleChange}
-              className="bg-gray-300"
+              className="bg-gray-300 dark:bg-neutral-200 dark:text-neutral-400"
             />
           </LabelInputContainer>
           <LabelInputContainer>
-            <Label htmlFor="companyName">Company Name (Optional)</Label>
+            <Label htmlFor="companyName" className="text-[#323202]">
+              Company Name (Optional)
+            </Label>
             <Input
               id="companyName"
               placeholder="Pegasus Health Group"
               type="text"
               value={formData.companyName}
               onChange={handleChange}
-              className="bg-gray-300"
+              className="bg-gray-300 dark:bg-neutral-200 dark:text-neutral-400"
             />
           </LabelInputContainer>
           <LabelInputContainer className="md:col-span-2">
@@ -112,17 +122,19 @@ export function PartnershipForm() {
               required
               value={formData.states}
               onChange={handleChange}
-              className="bg-gray-300"
+              className="bg-gray-300 dark:bg-neutral-200 dark:text-neutral-400"
             />
           </LabelInputContainer>
           <LabelInputContainer>
-            <Label htmlFor="experience">Years of Experience</Label>
+            <Label htmlFor="experience" className="text-[#323202]">
+              Years of Experience
+            </Label>
             <Select
               id="experience"
               required
               value={formData.experience}
               onChange={handleChange}
-              className="bg-gray-300"
+              className="bg-gray-300 dark:bg-neutral-200 dark:text-[#323202] "
             >
               <option value="" disabled>
                 Select experience...
@@ -134,13 +146,15 @@ export function PartnershipForm() {
             </Select>
           </LabelInputContainer>
           <LabelInputContainer>
-            <Label htmlFor="howDidYouHear">How did you hear about us?</Label>
+            <Label htmlFor="howDidYouHear" className="text-[#323202]">
+              How did you hear about us?
+            </Label>
             <Select
               id="howDidYouHear"
               required
               value={formData.howDidYouHear}
               onChange={handleChange}
-              className="bg-gray-300"
+              className="bg-gray-300 dark:bg-neutral-200 dark:text-[#323202] "
             >
               <option value="" disabled>
                 Select an option...
@@ -156,14 +170,16 @@ export function PartnershipForm() {
 
         {/* Textarea remains full-width */}
         <LabelInputContainer className="mt-4 mb-8">
-          <Label htmlFor="message">Message/Questions (Optional)</Label>
+          <Label htmlFor="message" className="text-[#323202]">
+            Message/Questions (Optional)
+          </Label>
           <Textarea
             id="message"
             placeholder="Your message..."
             value={formData.message}
             onChange={handleChange}
             rows={4}
-            className="bg-gray-300"
+            className="bg-gray-300 dark:bg-neutral-200 dark:text-white"
           />
         </LabelInputContainer>
 
@@ -177,7 +193,7 @@ export function PartnershipForm() {
 
         <div className="my-8 h-[1px] w-full bg-gradient-to-r from-transparent via-neutral-300 to-transparent dark:via-neutral-700" />
 
-        <p className="text-xs text-center text-neutral-600 dark:text-neutral-300">
+        <p className="text-xs text-center text-neutral-600 dark:text-neutral-600">
           We respect your privacy. Your information will only be used to discuss
           potential partnership opportunities.
         </p>

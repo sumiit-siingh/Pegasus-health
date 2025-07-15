@@ -5,16 +5,7 @@ import { motion } from "framer-motion"; // Corrected package name
 export function ColourfulText({ text }: { text: string }) {
   // Updated colors to match the brand palette
   const colors = [
-    "rgb(131, 179, 32)",
-    "rgb(47, 195, 106)",
-    "rgb(42, 169, 210)",
-    "rgb(4, 112, 202)",
-    "rgb(107, 10, 255)",
-    "rgb(183, 0, 218)",
-    "rgb(218, 0, 171)",
-    "rgb(230, 64, 92)",
-    "rgb(232, 98, 63)",
-    "rgb(249, 129, 47)",
+    "#00B2FF", // Blue
   ];
 
   const [currentColors, setCurrentColors] = React.useState(colors);

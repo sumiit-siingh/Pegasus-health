@@ -37,7 +37,7 @@ export const Card = React.memo(
         )}
       >
         <div className="text-xl md:text-2xl font-medium ">
-          <h3 className="text-xl md:text-2xl  font-bold bg-clip-text text-transparent bg-gradient-to-r from-orange-500 to-pink-500">
+          <h3 className="text-xl md:text-2xl  font-bold text-[#00b2ff]">
             {card.title}
           </h3>
           {/* Description */}
